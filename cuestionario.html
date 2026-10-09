@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario - Edwin Salvador</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css"> 
+    <style>
+        body {
+            background-color: #f4f7f6;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .main-cuestionario {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+        .contenedor-form {
+            background: #ffffff;
+            max-width: 550px;
+            width: 100%;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        }
+        .titulo-cuestionario {
+            font-size: 2rem;
+            color: #2091F9;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .txt-cuestionario {
+            color: #666;
+            text-align: center;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+        .grupo-campo {
+            margin-bottom: 20px;
+        }
+        .grupo-campo label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #333;
+        }
+        .grupo-campo input,
+        .grupo-campo select,
+        .grupo-campo textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+        .btn-volver {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #2091F9;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .btn-volver:hover {
+            text-decoration: underline;
+        }
+        .form-cuestionario .cta {
+            display: block;
+            width: 100%;
+            padding: 14px;
+            background-color: #2091F9;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="main-cuestionario">
+        <div class="contenedor-form">
+            <a href="index.html" class="btn-volver">← Volver al inicio</a>
+            
+            <h1 class="titulo-cuestionario">¿Listo para aprender CSS?</h1>
+            <p class="txt-cuestionario">Cuéntanos tu experiencia y personaliza tus ideas. Atte: Edwin.</p>
+
+            <form action="https://formspree.io/f/xyekwqyz" method="POST" class="form-cuestionario">
+
+                <div class="grupo-campo">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="email">Tu correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="satisfaccion">¿Qué te pareció el diseño de la página web?</label>
+                    <select id="satisfaccion" name="satisfaccion">
+                        <option value="excelente">Excelente</option>
+                        <option value="bueno">Bueno</option>
+                        <option value="regular">Regular / Puede mejorar</option>
+                    </select>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="comentarios">Déjanos tus comentarios o sugerencias:</label>
+                    <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe aquí tu opinión..." required></textarea>
+                </div>
+
+                <button type="submit" class="cta">Enviar cuestionario</button>
+            </form>
+        <div>
+    </main>
+
+</body>
+</html>

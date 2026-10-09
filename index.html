@@ -22,10 +22,10 @@
     <meta property="og:title" content="Aprende CSS desde cero">
     <meta property="og:description"
         content="Hola, soy una descripción que verás cuando busques algo de mi temática en Google.">
-    <meta property="og:image" content="https://EdwinSalvadorAmador.github.io/images/css.jpg">
+    <meta property="og:image" content="https://github.io">
 
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.EdwinSalvadorAmador.com/">
+    <meta property="twitter:url" content="https://edwinsalvadoramador.com">
     <meta property="twitter:title" content="Aprende CSS desde cero">
     <meta property="twitter:description"
         content="Hola, soy una descripción que verás cuando busques algo de mi temática en Google.">
@@ -47,6 +47,7 @@
                 <li class="nav__items">
                     <a href="#" class="nav__links">Acerca de</a>
                 </li>
+                <!-- 1. Botón de contacto desactivado (#) -->
                 <li class="nav__items">
                     <a href="#" class="nav__links">Contacto</a>
                 </li>
@@ -66,6 +67,7 @@
             <h1 class="hero__title">Aprende CSS3 desde CERO hasta dominarlo.</h1>
             <p class="hero__paragraph">Elige aprender CSS de una vez por todas, una vez que termines este curso serás
                 capaz de crear cualquier layout con CSS y crear tus propias animaciones.</p>
+            <!-- 2. Botón Comienza ahora desactivado (#) para que no vaya al formulario -->
             <a href="#" class="cta">Comienza ahora</a>
         </section>
     </header>
@@ -128,7 +130,6 @@
                     <a href="#" class="price__cta">Empieza ahora</a>
                 </div>
 
-
                 <div class="price__element price__element--best">
                     <p class="price__name">Grid</p>
                     <h3 class="price__price">$30/mes</h3>
@@ -142,7 +143,6 @@
                     <a href="#" class="price__cta">Empieza ahora</a>
                 </div>
 
-
                 <div class="price__element">
                     <p class="price__name">Animaciones</p>
                     <h3 class="price__price">$40/mes</h3>
@@ -155,19 +155,17 @@
 
                     <a href="#" class="price__cta">Empieza ahora</a>
                 </div>
-
-
             </div>
         </section>
 
-        <section class="testimony">
+                <section class="testimony">
             <div class="testimony__container container">
                 <img src="./images/leftarrow.svg" class="testimony__arrow" id="before">
 
+                <!-- Testimonio 1: Edwin -->
                 <section class="testimony__body testimony__body--show" data-id="1">
                     <div class="testimony__texts">
-                        <h2 class="subtitle">Mi nombre es Edwin Salvador Amador, <span class="testimony__course">estudiante
-                                de CSS.</span></h2>
+                        <h2 class="subtitle">Mi nombre es Edwin Salvador Amador, <span class="testimony__course">estudiante de CSS.</span></h2>
                         <p class="testimony__review">Soy muy sociable me gusta divertirme con mis amigos jugando basquetball o pasando el rato charlando o apoyando a mis amigos,tambien salir a comer o jugando en la carolina de vez en cuando mientras trabajo a veces reecontrandome con amigos o conocidos para charlar un rato</p>
                     </div>
 
@@ -176,6 +174,7 @@
                     </figure>
                 </section>
 
+                <!-- Testimonio 2: Avicii -->
                 <section class="testimony__body" data-id="2">
                     <div class="testimony__texts">
                         <h2 class="subtitle">Mi cantante favorito avicii <span class="testimony__course">fue un famoso DJ, compositor y productor musical sueco.</span></h2>
@@ -187,6 +186,7 @@
                     </figure>
                 </section>
 
+                <!-- Testimonio 3: Lebron James -->
                 <section class="testimony__body" data-id="3">
                     <div class="testimony__texts">
                         <h2 class="subtitle">Lebron James, <span class="testimony__course">Jugador de Basquetball.</span></h2>
@@ -198,11 +198,11 @@
                     </figure>
                 </section>
 
+                <!-- Testimonio 4: El Mariana -->
                 <section class="testimony__body" data-id="4">
                     <div class="testimony__texts">
-                        <h2 class="subtitle">Mi influencer favorito el Mariana, <span class="testimony__course">estudiante de
-                                CSS.</span></h2>
-                        <p class="testimony__review">Me gusta ver en mis tiempos libres algunos de sus videos y en vivos siendo muy divertido y entretenido ver como juega diferentes juegos haciendo todo tipos de retos o desafios locos</p>
+                        <h2 class="subtitle">El Mariana, <span class="testimony__course">Creador de contenido y Streamer.</span></h2>
+                        <p class="testimony__review">Me gusta mucho ver sus transmisiones en vivo y videos porque tiene un sentido del humor único, es muy entretenido y me divierte pasar el rato viendo sus ocurrencias y cómo juega con sus amigos.</p>
                     </div>
 
                     <figure class="testimony__picture">
@@ -210,106 +210,40 @@
                     </figure>
                 </section>
 
-
+                <!-- ESTA ES LA LÍNEA DE LA FLECHA DERECHA (Aproximadamente línea 162) -->
                 <img src="./images/rigtharrow.svg" class="testimony__arrow" id="next">
             </div>
         </section>
 
-        <section class="questions container">
-            <h2 class="subtitle">Preguntas frecuentes</h2>
-            <p class="questions__paragraph">En esta pagina se resolveran algunas de las dudas principales de css y como funciona ademas de algunos de sus elementos</p>
-
-            <section class="questions__container">
-                <article class="questions__padding">
-                    <div class="questions__answer">
-                        <h3 class="questions__title">¿Qué es CSS?
-                            <span class="questions__arrow">
-                                <img src="./images/arrow.svg" class="questions__img">
-                            </span>
-                        </h3>
-
-                        <p class="questions__show">CSS (siglas de Cascading Style Sheets, o Hojas de Estilo en Cascada) es un lenguaje de diseño gráfico o lenguaje de estilos utilizado para definir y controlar la apariencia visual, el formato y la maquetación de un documento escrito en un lenguaje de marcado, principalmente HTML</p>
-                    </div>
-                </article>
-
-                <article class="questions__padding">
-                    <div class="questions__answer">
-                        <h3 class="questions__title">¿Qué aprenderé en este curso?
-                            <span class="questions__arrow">
-                                <img src="./images/arrow.svg" class="questions__img">
-                            </span>
-                        </h3>
-
-                        <p class="questions__show">CSS te enseña a transformar el esqueleto de una página web (HTML) en una experiencia visual atractiva y funcional, permitiéndote dominar la estética y organización de un sitio. Al aprenderlo, adquieres la capacidad de dar estilo mediante colores y tipografías, organizar el espacio en la pantalla con herramientas de maquetación como Flexbox y Grid, adaptar el diseño de forma automática para que se vea perfecto en celulares, tablets y computadoras, y darle vida a la interfaz a través de efectos visuales, transiciones y animaciones interactivas.</p>
-                    </div>
-                </article>
-
-                <article class="questions__padding">
-                    <div class="questions__answer">
-                        <h3 class="questions__title">¿Qué es CSS GRID?
-                            <span class="questions__arrow">
-                                <img src="./images/arrow.svg" class="questions__img">
-                            </span>
-                        </h3>
-
-                        <p class="questions__show">CSS Grid Layout es un sistema de maquetación web bidimensional que permite dividir una página en filas y columnas para posicionar elementos de forma sencilla, versátil y coherente. A diferencia de métodos anteriores (como floats o tablas) o sistemas unidimensionales (como Flexbox), CSS Grid te da un control total y simultáneo tanto del diseño horizontal como del vertical.</p>
-                    </div>
-                </article>
-            </section>
-
-            <section class="questions__offer">
-                <h2 class="subtitle">¿Estas listo para aprender CSS?</h2>
-                <p class="questions__copy">Sigueme hacia dentro de lo muchos no le toman importancia en las paginas web el interesante css,html y js donde reuniendo estos se pueden crear infinitas posibilidades para personalizar a tu gusto tu propia pagina web,Atte:Edwin</p>
-                <a href="#" class="cta">Aprende ahora</a>
-            </section>
-        </section>
     </main>
 
     <footer class="footer">
         <section class="footer__container container">
             <nav class="nav nav--footer">
                 <h2 class="footer__title">Curso CSS.</h2>
-
                 <ul class="nav__link nav__link--footer">
-                    <li class="nav__items">
-                        <a href="#" class="nav__links">Inicio</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="#" class="nav__links">Acerca de</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="#" class="nav__links">Contacto</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="#" class="nav__links">Blog</a>
-                    </li>
+                    <li class="nav__items"><a href="#" class="nav__links">Inicio</a></li>
+                    <li class="nav__items"><a href="#" class="nav__links">Acerca de</a></li>
+                    <li class="nav__items"><a href="#" class="nav__links">Contacto</a></li>
+                    <li class="nav__items"><a href="#" class="nav__links">Blog</a></li>
                 </ul>
             </nav>
 
-            <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
-                <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
+            <div class="footer__form">
+                <h2 class="footer__newsletter">¿Listo para responder?</h2>
                 <div class="footer__inputs">
-                    <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
-                    <input type="submit" value="Registrate" class="footer__submit">
+                    <a href="cuestionario.html" class="footer__submit" style="text-decoration: none; text-align: center; display: inline-block; line-height: 44px; width: 100%;">Ir al cuestionario</a>
                 </div>
-            </form>
+            </div>
         </section>
 
         <section class="footer__copy container">
-<div class="footer__social">
-    <a href="https://www.facebook.com/" class="footer__icons" target="_blank" rel="noopener noreferrer">
-        <img src="./images/facebook.svg" class="footer__img" alt="Facebook">
-    </a>
-
-    <a href="https://x.com/" class="footer__icons" target="_blank" rel="noopener noreferrer">
-        <img src="./images/twitter.svg" class="footer__img" alt="Twitter">
-    </a>
-
-    <a href="https://www.youtube.com/" class="footer__icons" target="_blank" rel="noopener noreferrer">
-        <img src="./images/youtube.svg" class="footer__img" alt="YouTube">
-    </a>
-</div>
-            <h3 class="footer__copyright">Derechos reservados &copy; Edwin Salvador Amador</h3>
+            <div class="footer__social">
+                <a href="https://facebook.com" target="_blank" class="footer__icons"><img src="./images/facebook.svg" class="footer__img"></a>
+                <a href="https://twitter.com" target="_blank" class="footer__icons"><img src="./images/twitter.svg" class="footer__img"></a>
+                <a href="https://youtube.com" target="_blank" class="footer__icons"><img src="./images/youtube.svg" class="footer__img"></a>
+            </div>
+            <p class="footer__copyright">Derechos reservados &copy; Edwin Salvador Amador</p>
         </section>
     </footer>
 
@@ -317,5 +251,5 @@
     <script src="./js/questions.js"></script>
     <script src="./js/menu.js"></script>
 </body>
-
 </html>
+
